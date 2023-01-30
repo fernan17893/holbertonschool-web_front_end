@@ -15,4 +15,3 @@ const user = {
   const bindLogWelcomeUser = logWelcomeUser.bind(user);
   bindLogWelcomeUser('Welcome');
   bindLogWelcomeUser('Hello');
-  

@@ -51,4 +51,3 @@ function countPrimeNumbers () {
   setTimeout(function () {
     console.log('Execution time of calculating prime numbers 100 times was ' + (endCountPrimeNumbers - startCountPrimeNumbers) + ' milliseconds.');
   }, 0);
-  
