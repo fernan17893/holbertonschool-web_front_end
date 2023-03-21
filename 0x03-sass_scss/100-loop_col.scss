@@ -1,6 +1,0 @@
-/* different width */
-$width: (100%, 50%, 33.3333333333%, 25%);
-
-@for $i from 1 to 4 {
-    width: nth($width, $i);
-}

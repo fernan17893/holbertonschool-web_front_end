@@ -1,1 +1,0 @@
-Holberton School Project 0x00
