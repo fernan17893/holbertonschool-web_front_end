@@ -1,0 +1,436 @@
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+
+/* Variables
+ ======================== */
+
+:root {
+  --orange: #FF6565;
+  --white: white;
+
+  --font-family-normal: 'Source-sans-Pro-Regular';
+  --font-family-bold: 'Source-sans-Pro-Bold';
+
+
+  @font-face {
+    font-family: Source-sans-Pro-Regular;
+    src: url(/fonts/Source-sans-Pro-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Source-sans-Pro-Bold;
+    src: url(/fonts/Source-sans-Pro-Bold.ttf);
+  }
+
+}
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .holberton_school-icon-arrow_1:before {
+    content: "\e900";
+  }
+  .holberton_school-icon-arrow_2:before {
+    content: "\e901";
+  }
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+  }
+  .holberton_school-icon-arrow_5:before {
+    content: "\e904";
+  }
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  .holberton_school-icon-ic_bag:before {
+    content: "\e906";
+  }
+  .holberton_school-icon-ic_cart:before {
+    content: "\e907";
+  }
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  .holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+  }
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  .holberton_school-icon-ic_laptop:before {
+    content: "\e90b";
+  }
+  .holberton_school-icon-ic_money:before {
+    content: "\e90c";
+  }
+  .holberton_school-icon-ic_music:before {
+    content: "\e90d";
+  }
+  .holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+  }
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  .holberton_school-icon-ic_video:before {
+    content: "\e910";
+  }
+  .holberton_school-icon-menu:before {
+    content: "\e911";
+  }
+  .holberton_school-icon-search_1:before {
+    content: "\e912";
+  }
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+  }
+  .holberton_school-icon-star:before {
+    content: "\e914";
+  }
+  
+
+
+/* Sections 
+ ==================== */
+
+
+.header {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  width: 100vw;
+  height: 95vh;
+  padding-top: 5vh;
+  margin: auto;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+
+.header-container {
+  padding-top: 30px;
+}
+
+.header-container input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.header-container:first-child {
+  text-align-last: start;
+}
+
+.header-logo {
+  inline-size: 13px;
+  position: relative;
+}
+
+.nav-icon {
+margin-top: 5px;
+margin-left: 10px;
+inline-size: 95px;
+display: inline-block;
+vertical-align: top;
+text-align: start;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.navbar-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  float: right;
+  list-style: none;
+ 
+}
+
+.navbar-list li {
+  letter-spacing: 0;
+  min-height: 15px;
+  min-width: 80px;
+  margin: 0 25px;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: justify;
+  padding-right: 25px;
+}
+
+.navbar-list a {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: large;
+  position: absolute;
+}
+
+.navbar-list a:hover {
+  color: var(--orange);
+  transition: ease-out 0.2s;
+}
+
+.header-logo {
+  margin-left: 20px;;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-family-bold);
+  font-style: bold;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+}
+
+.hero h2 {
+  font-family: var(--font-family-normal);
+  color: var(--white);
+  font-size: large;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  font-family: var(--font-family-bold);
+  inline-size: 12%;
+  letter-spacing: .10px;
+  block-size: 48px;
+  background-color: var(--orange);
+  color: var(--white);
+  box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.74);
+}
+
+button:hover{
+  background-color: #ff6565c3;
+}
+
+.hero-par { 
+  color: var(--white);
+  font-family: var(--font-family-normal);
+  margin-top: 100px;
+  font-size: medium;
+  font-weight: thin;
+  line-height: 30px;
+  max-width: 40%;
+  margin-left: 29%;
+}
+
+.what-section {
+    max-inline-size: 1000px;
+    inline-size: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 637px;
+    height: 184px;
+}
+
+.what-section h2 {
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+
+.what-section p {
+  font-family: var(--font-family-normal);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  width: 637px;
+  height: 104px;
+  top: 82px;
+}
+
+.tasks-list {
+    margin-top: 150px;
+    justify-content: center;
+    list-style: none;
+    display: flex; 
+    align-items: center;
+}
+
+.tasks-list li {
+   margin-left: 10px;
+   margin-right: 200px;
+   justify-content: center;
+}
+
+
+
+.tasks-list span {
+  font-size: 192px;
+  color: #FF6565;
+}
+
+
+.task-container {
+   margin: 50px auto;
+   width: 1002px;
+   height: 193px;
+   margin-top: 10%;
+   padding-left: 5%;
+   margin-bottom: 15%;
+}
+
+.results-container {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.results-body {
+    max-inline-size: 1000px;
+    inline-size: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 637px;
+    height: 184px;
+    padding-top: 15%;
+}
+
+.results-body h2 {
+    font-size: 32px;
+    font-family:var(--font-family-normal);
+    color: var(--white);
+    font-style: initial;
+    text-align: center;
+    padding-bottom: 10%;
+    margin-top: -10%;
+}
+
+.results-body p {
+    color: var(--white);
+    font-family: var(--font-family-normal);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    width: 627px;
+    height: 104px;
+    top: 82px;
+    padding-bottom: 10%;
+}
+
+
+
+.results-list {
+    margin-top: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    margin-right: 30px;
+}
+
+
+.results-list h3 {
+    position: absolute;
+    color: var(--white);
+    font-size: 65px;
+    transform: translateX(52%);
+    top: 15%;
+    font-family: var(--font-family-normal);
+}
+
+.results-list p {
+    position: absolute;
+    color: var(--white);
+    font-size: 20px;
+    transform: translateX(29%);
+    top: 55%;
+    font-family: var(--font-family-normal);
+
+}
+
+.results-pentas {
+    position: relative;
+}
+
+.results-list {
+    justify-content: space-between;
+}
+
+.results-pentas img{
+    width: 300px;
+}
+
+.contact-body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+    width: 400px;
+    gap: 50px;
+    height: fit-content;
+}
+
+.contactbutton {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-body h2 {
+    font-size: 32px;
+}
+
+.contact-body form{
+    width: 300px;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #D4D6DA;
+}
+
+.contact-body input {
+    border: none;
+    background: none;
+    outline: none;
+}
